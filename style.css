@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-color: rgb(75, 75, 75);
+    font-family: "Poppins", sans-serif;
+    /* position: sticky; */
+    top: 0;
+    height: auto;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.mainnav {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    height: auto;
+    background-color: rgb(201, 201, 201);
+    box-sizing: border-box;
+}
+.mainnav_anchor{
+    margin: 10px;
+    padding: 2px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.mainnav_anchor:hover{
+    color: white;
+    background-color: rgb(70, 70, 70);
+    border: 2px solid rgb(70, 70, 70);
+    box-shadow: 4px 5px 8px 0px grey;
+    transition: all 0.25s;
+}
+.nowpage{
+    padding: 4px;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    border: 2px solid rgb(70, 70, 70);
+}
+
+.expnav{
+    padding: 15px;
+    background-color: rgb(248, 248, 248);
+    /* position: sticky;
+    top: 45px; */
+
+}
+
+.exp_anchor{
+    /* margin: auto; */
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: rgb(226, 226, 226);
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+.exp_anchor:hover{
+    background-color: rgb(201, 201, 201);
+    
+}
+
+.exp_name{
+    text-align: left;
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+
+.gallery img {
+    max-width: 100%;
+    max-height: 200px; /* Limit height to keep images manageable */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Fullscreen overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden; /* Hide default scrollbars */
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto; /* Enable scrollbars */
+}
+
+.overlay img {
+    transform: scale(1); /* Reset zoom level */
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+    cursor: grab; /* Change cursor to indicate dragging */
+    max-width: none; /* Allow the image to grow beyond the container */
+    max-height: none; /* Allow the image to grow beyond the container */
+    margin-top: 40px; /* Move the image down by 40px */
+}
+
+.overlay img.dragging {
+    cursor: grabbing; /* Change cursor when dragging */
+}
+
+.closebtn {
+    position: absolute;
+    padding: 5px;
+    top: 30px;
+    right: 50px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001; /* Ensure close button is above the image */
+    transition: background-color 0.3s;
+
+}
+.closebtn:hover{
+    background-color: red;
+    transition: background-color 0.3s;
+}
+
+.zoom-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+}
+
+.zoom-controls button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+.zoom-buttons{
+    border-radius: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.zoom-buttons:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.zoom-buttons:active{
+    background-color: rgb(119, 119, 119);
+}
+
+.up-button{
+    background-color: pink;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid rgb(182, 187, 189);
+    border-radius: 70%;
+    position: fixed;
+    top: 90vh;
+    right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.up-button:hover{
+    background-color: rgb(211, 160, 169);
+    transform: translateY(-7px);
+    box-shadow: 0px 8px 4px 0px grey;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.3s;
+}
+
+.up-button:active{
+    background-color: rgb(167, 128, 135);
+}

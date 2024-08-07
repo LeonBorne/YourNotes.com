@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/jpg">
+    <script src="script.js"></script>
+    <style>
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="top">Welcome to YourNotes.com!</h1>
+    <nav class="mainnav">
+        <a class="mainnav_anchor" href="index.html">Home</a>
+        <a class="mainnav_anchor" href="physics_section.html">Physics</a>
+        <a class="mainnav_anchor" href="chemistry_section.html">Chemistry</a>
+        <a class="nowpage mainnav_anchor" href="biology_section.html">Biology</a>
+    </nav>
+
+    <nav class="expnav">
+        Experiment No :
+        <a href="#1_exp" class="exp_anchor">1</a>
+        <a href="#2_exp" class="exp_anchor">2</a>
+        <a href="#3_exp" class="exp_anchor">3</a>
+    </nav>
+
+    <a href="#top" class="up-button">^</a>
+
+    <main>
+        <div>
+            <h2 class="exp_name" id="1_exp">Experiment 1</h2>
+            <div class="gallery">
+                <img src="Biology_img/Bio_Ex_01_01.jpg" alt="Biology Experiment 1" onclick="openFullscreen(this)">
+                <img src="Biology_img/Bio_Ex_01_02.jpg" alt="Biology Experiment 1" onclick="openFullscreen(this)">
+                <img src="Biology_img/Bio_Ex_01_03.jpg" alt="Biology Experiment 1" onclick="openFullscreen(this)">
+                <img src="Biology_img/Bio_Ex_01_04.jpg" alt="Biology Experiment 1" onclick="openFullscreen(this)">
+                <img src="Biology_img/Bio_Ex_01_05.jpg" alt="Biology Experiment 1" onclick="openFullscreen(this)">
+
+            </div>
+        </div>
+
+
+        <div>
+            <h2 class="exp_name" id="2_exp">Experiment 2</h2>
+            Comming Soon!
+        </div>
+
+
+    </main>
+
+    <!-- Fullscreen overlay -->
+    <div id="fullscreenOverlay" class="overlay">
+        <span class="closebtn">&times;</span>
+        <div class="zoom-controls">
+            <button class="zoom-buttons" onclick="zoomIn()">+</button>
+            <button class="zoom-buttons" onclick="zoomOut()">-</button>
+        </div>
+        <div class="overlay-content">
+            <img id="fullscreenImage" src="" alt="Fullscreen Image">
+        </div>
+    </div>
+</body>
+
+</html>
