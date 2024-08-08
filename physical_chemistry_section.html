@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Chemistry</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        .chemical-table {
+            width: 80%;
+            max-width: 600px;
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+
+        .chemical-table th,
+        .chemical-table td {
+            border: 1px solid #ddd;
+            padding: 6px 12px;
+            text-align: center;
+        }
+
+        .chemical-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .chemical-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .chemical-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .chemical-table td[rowspan] {
+            vertical-align: top;
+        }
+
+        .math-container {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+        .math {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .math sup,
+        .math sub {
+            font-size: 0.75em;
+        }
+
+        .math span {
+            color: #d64f4f;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="top">Welcome to YourNotes.com!</h1>
+    <nav class="mainnav">
+        <a class="mainnav_anchor" href="index.html">Home</a>
+        <a class="mainnav_anchor" href="physics_section.html">Physics</a>
+        <a class="mainnav_anchor" href="chemistry_section.html">Chemistry</a>
+        <a class="mainnav_anchor" href="biology_section.html">Biology</a>
+        <a class="nowpage mainnav_anchor" href="physical_chemistry_section.html">Physical Chemistry</a>
+    </nav>
+
+    <a href="#top" class="up-button">^</a>
+
+    <span class="notes">
+        <ol>
+
+            <li>
+                Atom
+            </li>
+            <p class="notes-disc">
+                Atom is the smallest particle of an element which can take part in chemical reaction. It may have
+                dependent or independent existense.
+            </p>
+
+
+            <li>
+                Molecule
+            </li>
+            <p class="notes-disc">
+                A molecule is the smallest part of an element or a compound which can exist freely under ordinary
+                condition.
+            </p>
+
+            <li>
+                Homo atomic molecule
+            </li>
+
+            <ol class="subnotes">
+                <li class="sub-notes-title">
+                    Monoatomic molecule
+                </li>
+                <p class="sub-notes-disc">
+                    They contain single atom of the same element. Molecules of inert gases are monoatomic eg: He, Ne,
+                    etc.
+                </p>
+
+
+                <li class="sub-notes-title">
+                    Diatomic molecule
+                </li>
+                <p class="sub-notes-disc">
+                    They contain two atom of the same element. eg: H<sub>2</sub> , N<sub>2</sub> , O<sub>2</sub> , etc.
+                </p>
+                <li class="sub-notes-title">
+                    Polyatomic molecule
+                </li>
+                <p class="sub-notes-disc">
+                    They contain more than two atoms of the same element. Eg: Ozone (O<sub>3</sub>),
+                    Phosphorus(P<sub>4</sub>), etc.
+                </p>
+            </ol>
+
+            <li>Hetroatomic molecule</li>
+            <p class="notes-disc">
+                Such molecules are made up of different toms which are classified as di, tri, tetra, atomic molecules,
+                etc. depending upon the number of atoms. Eg: HCL, H<sub>2</sub>O, etc.
+            </p>
+
+            <li>Symbol</li>
+            <p class="notes-disc">
+                Short abberviation for the full name of the element is called symbol.
+            </p>
+
+            <li>Significance of Symbol</li>
+
+            <ol class="subnotes">
+                <li class="sub-notes-title">Qualitive</li>
+                <p class="sub-notes-disc">Gives information about the element.</p>
+                <li class="sub-notes-title">Quantative</li>
+                <p class="sub-notes-disc">Gives information about one gram of element. It gives information about 1
+                    atomic weight of element.</p>
+            </ol>
+
+            <li>Valency</li>
+            <p class="notes-disc">The combining capacity of an element is called Valency.</p>
+
+            <li>Variable Valency</li>
+            <p class="notes-disc">Certain elements have more tahn one valency such condition is called variable valency.
+            </p>
+
+            <table class="chemical-table">
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Name</th>
+                        <th>Valency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Iron</td>
+                        <td>Ferrous</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Ferric</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Copper</td>
+                        <td>Cuprous</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Cupric</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Gold</td>
+                        <td>Aurous</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Auric</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Mercury</td>
+                        <td>Mercurous</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Mercuric</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <li>Atomic Mass Unit (amu) </li>
+            <p class="notes-disc">Atomic Mass Unit is defined as the quality of mass equal to 1/12<sup>th</sup> if the
+                mass of an atom of Carbon (C<sup>12</sup>). </p>
+
+            <li>Calculation for the absolute value of 1 amu:</li>
+            <div class="math-container">
+                <p class="math">
+                    1 mole = 1g atom of element <br>
+                    1 mole = 6.023 x 10<sup>23</sup> atoms <br>
+                    Now, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1g atom of carbon = 12g of carbon <br>
+                    or, &nbsp;&nbsp;&nbsp;&nbsp;1 mole = 12g of carbon <br>
+                    or, &nbsp;&nbsp;mass of 6.023 x 10<sup>23</sup> atoms = 12g of carbon <br>
+                    or, &nbsp;&nbsp;&nbsp;mass of 1 atom = 12/(6.023 x 10<sup>23</sup>) g <br>
+                    We know, <br>
+                    &nbsp;&nbsp;&nbsp;1 amu = (1/12) x mass of a carbon atom (C<sup>12</sup>) <br>
+                    or, &nbsp;&nbsp;&nbsp;1 amu = (1/12) x (1/6.023 x 10<sup>23</sup>) g <br>
+                    Therefore, <br>
+                    <span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 amu = 1.66 x 10<sup>-24</sup>g
+                    </span>
+                </p>
+
+            </div>
+
+            <li>Relative atomic mass</li>
+            <p class="notes-disc">
+                Relative atomic mass is a number which expresses as to show how many times an atom of the element is
+                heavier than 1/12<sup>th</sup> of the mass of a carbon atom. <br><br>
+            <p style="text-align: center;">
+                Relative Atomic Mass = mass of an atom / (1/12)<sup>th</sup> mass of carbon atom
+            </p>
+            </p>
+
+            <li>Gram atomic mass</li>
+            <p class="notes-disc">
+                Atomic mass of an element expressed in terms of gram is known as gram atomic mass. <br> <br>
+            <p style="text-align: center;">
+                No. of gram atom = weight of element in g / atomic weight of element
+            </p>
+            </p>
+
+            <li>Fractional atomic mass of an element</li>
+            <p class="notes-disc">
+                Naturally occuring cholrine is 75% Cl-35 which has atomic mass of 35 amu and 25% Cl-37 which has atomic
+                mass of 37 amu.
+            </p>
+            <ol class="subnotes">
+                <li class="sub-notes-title" style="list-style-type: disc;">
+                    Calculate the average atomic weight of cholrine
+                </li>
+
+                <div class="math-container">
+                    <p class="math">
+                        Average Atomic weight of Cholrine = 75% of 35 + 25% of 37 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 75% x 35 + 25% x 37 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 26.25 + 9.25 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 35.5 amu <br>
+                    </p>
+                </div>
+            </ol>
+
+            <li>Molecular Mass</li>
+            <p class="notes-disc">Molecular mass of a substance may be defined as the average relative mass of its
+                molecule as compared to the mass of an atom of Carbon(C<sup>12</sup>). <br><br>
+            <p class="notes-disc" style="text-align: center;">
+                Molecular weight = Weight of 1 molecule of substance / (1/12)<sup>th</sup> the weight of Carbon atom
+            </p>
+            </p>
+
+            <li>Gram molecular mass</li>
+            <p class="notes-disc">Molecular mass of compound expressed in terms of gram is called gram molecular mass. Eg: <br>
+            Molecular weight of H<sub>2</sub>O<sub>2</sub> = 34 amu <br>
+            Gram molecular weight of H<sub>2</sub>O<sub>2</sub> = 34g
+            </p>
+
+            <li>Empirical Formula</li>
+            <p class="notes-disc">The formula which gives the simple whole number ration of the atom of various element present in on molecule of the compound is called empirical formula.</p>
+
+            <li>Molecular Formula</li>
+            <p class="notes-disc">
+                A shorthand notation for the molecule of a substance in terms of symbol and it gives actual number of atoms of each element present in one molecule of that substance is called its molecular formula.
+            </p>
+
+            <table class="chemical-table">
+                <thead>
+                    <tr>
+                        <th>Compound</th>
+                        <th>Empirical Formula</th>
+                        <th>Molecular Formula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hydrogen Peroxide</td>
+                        <td>HO</td>
+                        <td>H<sub>2</sub>O<sub>2</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Benzene</td>
+                        <td>CH</td>
+                        <td>C<sub>6</sub>H<sub>6</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Glucose</td>
+                        <td>CH<sub>2</sub>O</td>
+                        <td>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Ethane</td>
+                        <td>CH<sub>3</sub></td>
+                        <td>C<sub>2</sub>H<sub>6</sub></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <li>Compound's common name & molecular formula</li>
+            <table class="chemical-table">
+                <thead>
+                    <tr>
+                        <th>Common Name</th>
+                        <th>Scientific Name</th>
+                        <th>Molecular Formula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marble</td>
+                        <td>Calcium Carbonate</td>
+                        <td>CaCO<sub>3</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Sand</td>
+                        <td>Silicon dioxide</td>
+                        <td>SiO<sub>2</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Common Salt</td>
+                        <td>Sodium Chloride</td>
+                        <td>NaCl</td>
+                    </tr>
+                    <tr>
+                        <td>Washing Soda</td>
+                        <td>Sodium Carbonate</td>
+                        <td>Na<sub>2</sub>CO<sub>3</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Vinegar</td>
+                        <td>Acetic Acid</td>
+                        <td>CH<sub>2</sub>COOH</td>
+                    </tr>
+                    <tr>
+                        <td>Caustic Soda</td>
+                        <td>Sodium Hydroxide</td>
+                        <td>NaOH</td>
+                    </tr>
+                    <tr>
+                        <td>Caustic Potash</td>
+                        <td>Potassium Hydroxide</td>
+                        <td>KOH</td>
+                    </tr>
+                    <tr>
+                        <td>Baking Powder</td>
+                        <td>Sodium Biocarbonate</td>
+                        <td>NaHCO<sub>3</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Bleaching Powder</td>
+                        <td>Calcium Hypochlorite</td>
+                        <td>Ca(OCl)<sub>2</sub></td>
+                    </tr>
+                    <tr>
+                        <td>Plaster of Paris</td>
+                        <td>Calcium Sulfate Hemihydrate</td>
+                        <td>CaSO<sub>4</sub>0.5H<sub>2</sub>O</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </ol>
+
+    </span>
+
+    <footer>
+        <u>About</u> <br>
+        &copy; Copyright all rights reserved <br>
+        Created by : Lost boy who loves ukulele. <br>
+        Contact : I don't have any ways to contact.
+    </footer>
+
+</body>
+
+</html>
