@@ -21,16 +21,20 @@ h1 {
 }
 
 .mainnav {
-    padding: 10px;
+    padding: 5px;
     position: sticky;
     top: 0;
     height: auto;
     background-color: rgb(201, 201, 201);
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 .mainnav_anchor{
-    margin: 10px;
-    padding: 2px;
+    margin: 5px;
     color: black;
     background-color: white;
     text-decoration: none;
@@ -38,6 +42,8 @@ h1 {
     border: 2px solid white;
     box-sizing: border-box;
     border-radius: 5px;
+    flex: 1; 
+    text-align: center;
 }
 .mainnav_anchor:hover{
     color: white;
@@ -51,6 +57,17 @@ h1 {
     color: white;
     background-color: rgb(70, 70, 70);
     border: 2px solid rgb(70, 70, 70);
+}
+
+footer {
+    background-color: #ececec;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-top: 1px solid #bdc0c4;
+
 }
 
 .expnav{
@@ -189,7 +206,7 @@ h1 {
     border: 1px solid rgb(182, 187, 189);
     border-radius: 70%;
     position: fixed;
-    top: 90vh;
+    top: 85vh;
     right: 30px;
     text-decoration: none;
     color: black;
@@ -204,3 +221,39 @@ h1 {
 .up-button:active{
     background-color: rgb(167, 128, 135);
 }
+
+
+.notes{
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.notes-disc{
+    margin-left: 30px;
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.notes ol li{
+    font-size: 19px;
+    text-decoration: double underline;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 7px;
+    
+}
+
+.notes ol .subnotes .sub-notes-title{
+    font-size: 18px;
+     margin-left: 35px;
+    text-decoration: underline;
+    font-weight: 500;
+    list-style-type: lower-roman;
+}
+
+.sub-notes-disc{
+    margin-left: 50px;
+}
+
+
+
