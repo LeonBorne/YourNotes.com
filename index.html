@@ -4,75 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>YourNotes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.jpg" type="image/jpg">
-    <style>
-        h2 {
-            padding: 50px;
-            font-weight: 300;
-            text-align: center;
-            align-items: center;
-        }
 
-        .refs {
-            margin: auto;
-            margin-top: 15px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            display: block;
-            width: 90vw;
-            text-decoration: none;
-            text-align: center;
-            color: black;
-            border: 1px solid black;
-            box-sizing: border-box;
-            transition: box-shadow 0.2s, transform 0.2s;
-        }
-
-        .refs:hover {
-            box-shadow: 2px 12px 11px grey;
-            transform: translateY(-5px);
-            /*Translates the Y axis by -5 px */
-            transition: box-shadow 0.2s, transform 0.2s;
-        }
-
-
-    </style>
 </head>
 
 <body>
     <h1 id="top">Welcome to YourNotes.com!</h1>
     <nav class="mainnav">
-        <a class="nowpage mainnav_anchor" href="index.html">Home</a>
-        <a class="mainnav_anchor" href="physics_section.html">Physics</a>
-        <a class="mainnav_anchor" href="chemistry_section.html">Chemistry</a>
-        <a class="mainnav_anchor" href="biology_section.html">Biology</a>
-        <a class="mainnav_anchor" href="physical_chemistry_section.html">Physical Chemistry</a>
+        <a class="nowpage" href="index.html">Home</a>
+        <a href="physics_section.html">Physics</a>
+        <a href="chemistry_section.html">Chemistry</a>
+        <a href="biology_section.html">Biology</a>
+        <a href="physical_chemistry_section.html">Physical Chemistry</a>
     </nav>
-    <span class="aboutsite">
-        <dl>
-            <dt>
-                <h3>About This Site:</h3>
-            </dt>
-            <dd>Welcome to your go-to resource for practical notes! Our site provides valuable notes to help you stay
-                ahead with your practicals. Take advantage of the comprehensive materials available here—these notes are
-                designed to make your practicals easier and more manageable.
-                <br>
-                Please note that this site is temporary and may be taken down at any time. So, make sure to download or
-                use the notes while you can!
-                <br>
-                Thank you for visiting, and we hope our notes make your practicals a breeze!
-            </dd>
-        </dl>
-    </span>
+    <section class="aboutsite">
+        <h3>About This Site:</h3>
+        <p>Welcome to your go-to resource for practical notes! Our site provides valuable notes to help you stay ahead with your practicals. Take advantage of the comprehensive materials available here—these notes are designed to make your practicals easier and more manageable.</p>
+        <p>Please note that this site is temporary and may be taken down at any time. So, make sure to download or use the notes while you can! Thank you for visiting, and we hope our notes make your practicals a breeze!</p>
+    </section>
     <main>
-        <h2><u>Following Practical Notes are available right now:</u></h2>
+        <h2>Following Practical Notes are available right now:</h2>
         <div class="container">
-            <a class="refs" id="physics" href="physics_section.html">Physics Practical Notes</a>
-            <a class="refs" id="chemimst" href="chemistry_section.html">Chemistry Practical Notes</a>
-            <a class="refs" id="biology" href="biology_section.html">Biology Practical Notes</a>
-            <a class="refs" id="physical_chemistry" href="physical_chemistry_section.html">Physical Chemistry Notes</a>
+            <a class="refs" href="physics_section.html">Physics Practical Notes</a>
+            <a class="refs" href="chemistry_section.html">Chemistry Practical Notes</a>
+            <a class="refs" href="biology_section.html">Biology Practical Notes</a>
+            <a class="refs" href="physical_chemistry_section.html">Physical Chemistry Notes</a>
         </div>
     </main>
     <footer>
