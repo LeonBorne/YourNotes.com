@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physical Chemistry</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/jpg">
 
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+
         .chemical-table {
-            width: 80%;
+            width: 90%;
             max-width: 600px;
             border-collapse: collapse;
             margin: 30px auto;
+            overflow-x: auto;
+            display: block;
         }
 
-        .chemical-table th,
-        .chemical-table td {
+        .chemical-table th, .chemical-table td {
             border: 1px solid #ddd;
             padding: 6px 12px;
             text-align: center;
@@ -28,48 +38,28 @@
             font-weight: bold;
         }
 
-        .chemical-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .chemical-table tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .chemical-table td[rowspan] {
-            vertical-align: top;
-        }
-
         .math-container {
-            display: block;
+            display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
             box-sizing: border-box;
         }
 
-
         .math {
             font-family: 'Courier New', Courier, monospace;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 1.5;
             color: #333;
             background-color: #f5f5f5;
-            margin: auto;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            display: block;
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .math sup,
-        .math sub {
-            font-size: 0.75em;
-        }
-
-        .math span {
-            color: #d64f4f;
-        }
     </style>
 </head>
 
@@ -85,7 +75,18 @@
 
     <a href="#top" class="up-button">^</a>
 
+
+    <nav class="expnav">
+        Chapter No :
+        <a href="#chapter-1" class="exp_anchor">1</a>
+        <a href="#chapter-2" class="exp_anchor">2</a>
+        <!-- <a href="#Chapter-3" class="exp_anchor">3</a> -->
+    </nav>
+
     <span class="notes">
+
+        <h2 id="chapter-1" class="chapter">Basic Atomic Concepts</h2>
+
         <ol>
 
             <li>
@@ -281,17 +282,20 @@
             </p>
 
             <li>Gram molecular mass</li>
-            <p class="notes-disc">Molecular mass of compound expressed in terms of gram is called gram molecular mass. Eg: <br>
-            Molecular weight of H<sub>2</sub>O<sub>2</sub> = 34 amu <br>
-            Gram molecular weight of H<sub>2</sub>O<sub>2</sub> = 34g
+            <p class="notes-disc">Molecular mass of compound expressed in terms of gram is called gram molecular mass.
+                Eg: <br>
+                Molecular weight of H<sub>2</sub>O<sub>2</sub> = 34 amu <br>
+                Gram molecular weight of H<sub>2</sub>O<sub>2</sub> = 34g
             </p>
 
             <li>Empirical Formula</li>
-            <p class="notes-disc">The formula which gives the simple whole number ration of the atom of various element present in on molecule of the compound is called empirical formula.</p>
+            <p class="notes-disc">The formula which gives the simple whole number ration of the atom of various element
+                present in on molecule of the compound is called empirical formula.</p>
 
             <li>Molecular Formula</li>
             <p class="notes-disc">
-                A shorthand notation for the molecule of a substance in terms of symbol and it gives actual number of atoms of each element present in one molecule of that substance is called its molecular formula.
+                A shorthand notation for the molecule of a substance in terms of symbol and it gives actual number of
+                atoms of each element present in one molecule of that substance is called its molecular formula.
             </p>
 
             <table class="chemical-table">
@@ -373,7 +377,7 @@
                     </tr>
                     <tr>
                         <td>Baking Powder</td>
-                        <td>Sodium Biocarbonate</td>
+                        <td>Sodium Bicarbonate</td>
                         <td>NaHCO<sub>3</sub></td>
                     </tr>
                     <tr>
@@ -390,7 +394,199 @@
             </table>
 
 
+            <li>Commonly used radicals</li>
+            <table class="chemical-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Radicals</th>
+                        <th>Name</th>
+                        <th>Radicals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Formate</td>
+                        <td>HCOO<sup>-</sup></td>
+                        <td>Hypochlorite</td>
+                        <td>ClO<sup>-</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Acetate</td>
+                        <td>CH<sub>3</sub>COO<sup>-</sup></td>
+                        <td>Hypobromite</td>
+                        <td>BrO<sup>-</sup> </td>
+
+                    </tr>
+                    <tr>
+                        <td>Bicarbonate</td>
+                        <td>HCO<sub>3</sub><sup>-</sup></td>
+                        <td>Hypoiodite</td>
+                        <td>IO<sup>-</sup></td>
+
+                    </tr>
+                    <tr>
+                        <td>Bisulphate</td>
+                        <td>HSO<sub>4</sub><sup>-</sup></td>
+                        <td>Permagnate</td>
+                        <td>MnO<sub>4</sub><sup>-</sup></td>
+
+                    </tr>
+                    <tr>
+                        <td>Bisulphite</td>
+                        <td>HSO<sub>3</sub><sup>-</sup></td>
+                        <td>Thiocyante</td>
+                        <td>SCN<sup>-</sup></td>
+
+                    </tr>
+                    <tr>
+                        <td>Cyanite</td>
+                        <td>CNO<sup>-</sup></td>
+                        <td>Dichromate</td>
+                        <td>Cr<sub>2</sub>O<sub>7</sub><sup>-</sup></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Cyanide</td>
+                        <td>CN<sup>-</sup></td>
+                        <td>Oxalate</td>
+                        <td>C<sub>2</sub>O<sub>4</sub><sup>--</sup></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Isocyanide</td>
+                        <td>NC<sup>-</sup></td>
+                        <td>Thiosulphate</td>
+                        <td>S<sub>2</sub>O<sub>2</sub><sup>---</sup></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Hydride</td>
+                        <td>H<sup>-</sup></td>
+                        <td>Carbonate</td>
+                        <td>CO<sub>3</sub><sup>--</sup></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Nitrate</td>
+                        <td>NO<sub>3</sub><sup>-</sup></td>
+                        <td>Oxide</td>
+                        <td>O<sup>--</sup></td>
+
+                    </tr>
+                    <tr>
+                        <td>Nitrite</td>
+                        <td>NO<sub>2</sub><sup>-</sup></td>
+                        <td>Peroxide</td>
+                        <td>O<sub>2</sub><sup>--</sup></td>
+
+                    </tr>
+                    <tr>
+                        <td>Chlorate</td>
+                        <td>ClO<sub>3</sub><sup>-</sup></td>
+                        <td>Perchlorate</td>
+                        <td>ClO<sub>4</sub><sup>-</sup></td>
+
+                    </tr>
+                    <tr>
+                        <td>Hydroxide</td>
+                        <td>OH<sup>-</sup></td>
+                        <td>Bromide</td>
+                        <td>Br<sup>-</sup></td>
+                    </tr>
+                </tbody>
+            </table>
         </ol>
+
+
+        <h2 id="chapter-2" class="chapter">Stiochiometry</h2>
+
+
+        <ol>
+
+            <li>Dalton atomic theory (1808 AD)</li>
+            <ol class="subnotes">
+                <li class="sub-notes-title">Postulates (Rules/Laws)</li>
+                <ol class="points">
+                    <li class="points">
+                        Matter is made up of small, indivisible particles called 'atoms'.
+                    </li>
+                    <li class="points">
+                        Atoms of similar element are identical in all respects that is they posses same size, shape and
+                        masses.
+                    </li>
+                    <li class="points">
+                        Atoms of different element are different from on another in all respects that is they posses
+                        different size, shape, mass and chemical properties.
+                    </li>
+                    <li class="points">
+                        Atoms cannot be created or destroyed. They cannot be changed into the atoms of other element.
+                    </li>
+                    <li class="points">Atoms of different element are combined in fixed ratio to form compound atom(Now
+                        called molecule). </li>
+                    <li class="points">Atom is the smallest particle that can take part in chemical reaction.</li>
+                </ol>
+
+                <li class="sub-notes-title">Limitations/Drawbacks</li>
+                <ol class="points">
+                    <li class="points">It couldn't explain the existence of Isotopes and Isobars.</li>
+                    <p
+                        style="margin-left: 50px;text-align: center;border: 1px solid #bdcccf;background-color: #d1d4df;padding: 10px;display: inline-block;">
+                        Isotopes - Element with same atomic number but different atomic weight. <br>Isobars - Element
+                        with different atomic number but same atomic weight.
+                    </p>
+                    <li class="points">It couldn't explain the cause chemical reaction.</li>
+                </ol>
+            </ol>
+
+            <li>Modefied Dalton Atomic Theory/Modern Atomic Theory</li>
+            <ol class="points">
+                <li class="points">The atoms are no longer considered to be indivisible.</li>
+                <li class="points">Atom of some element may not be similar in all respects.</li>
+                <li class="points">Atoms of different element may be similar in one or more respects.</li>
+                <li class="points">The ration in which atoms unite may be fixed and integral but may not be simple.</li>
+                <li class="points">Atoms of one element can be changed into atoms of another element.</li>
+                <li class="points">Mass and Energy are interconvertible.</li>
+            </ol>
+
+
+            <li>Stiochiometry</li>
+            <p class="notes-disc">Stiochiometry is defined as a calculation which deals with the measurement of mass and
+                volume relationship of reactant and product.</p>
+
+            <img src="Images/stoichiometry_pic.png" alt="laws-of-stoichiometry" class="notes-pic">
+
+            <ol class="subnotes">
+                <li class="sub-notes-title">Law of conservation of mass(1774)</li>
+                <p class="sub-notes-disc">
+                    It states that the total mass of reactants consumed is equal to total mass of product formed. <br>
+                    Mathematically, <br>
+                <p
+                    style="margin-left: 50px;border: 1px solid #bdcccf;background-color: #d1d4df;padding: 10px;display: inline-block;">
+                    Total mass of reactant = Total mass of product</p>
+                </p>
+                <p style="margin-left: 30px;list-style-type: none;text-decoration: underline;font-weight: 400;">Modefied
+                    law of conservation of mass</p>
+                <p class="sub-notes-disc">It states that the total energy and mass of reactant consumed is equal to
+                    total mass and energy of product formed.</p>
+
+                <li class="sub-notes-title">Law of definite proportion or constant composition</li>
+                <p class="notes-disc">It states that a chemical compound is always found to be made up of the same
+                    element combined together in a fixed proportion by weight.</p>
+
+            </ol>
+
+
+        </ol>
+
+        <h3 style="text-align: center;">
+
+            Comming Soon!
+        </h3>
 
     </span>
 
