@@ -22,7 +22,7 @@ h2 {
     margin: 0;
 }
 
-#top{
+#top {
     padding: 20px;
 }
 
@@ -181,11 +181,16 @@ footer {
 }
 
 .overlay img {
-    transform: scale(1);  /* Ensure the image appears at its normal size */
-    transition: transform 0.3s ease;  /* Smooth zoom transition */
-    cursor: default;      /* Normal cursor */
-    max-width: 90%;       /* Ensure the image fits within the overlay */
-    max-height: 90%;      /* Ensure the image fits within the overlay */
+    transform: scale(1);
+    /* Ensure the image appears at its normal size */
+    transition: transform 0.3s ease;
+    /* Smooth zoom transition */
+    cursor: default;
+    /* Normal cursor */
+    max-width: 90%;
+    /* Ensure the image fits within the overlay */
+    max-height: 90%;
+    /* Ensure the image fits within the overlay */
 }
 
 .overlay img.dragging {
@@ -263,6 +268,28 @@ footer {
     font-size: 1rem;
     font-weight: 600;
     margin-top: 10px;
+    text-decoration: double underline grey;
+}
+
+.notes ol .highlight {
+    margin-left: 50px;
+    text-align: center;
+    border: 1px solid #bdcccf;
+    background-color: #d1d4df;
+    padding: 10px;
+    display: inline-block;
+}
+
+.notes ol .subnotes .sub-notes-title {
+    text-decoration: underline black;
+    list-style: lower-roman;
+}
+
+.notes ol .points {
+    text-decoration: none !important;
+    list-style: lower-alpha;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .notes-pic {
