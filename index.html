@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to YourNotes</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        section.aboutsite {
+            padding: 20px;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 40px;
+            width: 90%;
+            max-width: 500px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border: 2px solid #4CAF50;
+        }
+
+        .login-container input[type="text"] {
+            padding: 12px;
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        .login-container input[type="text"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .login-container input[type="submit"] {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: scale(1.02);
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+
+        main {
+            padding: 20px;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            color: #333;
+        }
+
+        h3.problem-heading {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        ol.problem-list {
+            list-style: decimal;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .notes-disc {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .login-container, section.aboutsite, main {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .login-container input[type="text"], 
+            .login-container input[type="submit"] {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Welcome to YourNotes.com!</h1>
+    
+    <div class="login-container">
+        <input id="login-code" type="text" placeholder="Enter login code">
+        <input id="login-button" type="submit" value="Login">
+        <p id="error-message" class="error-message"></p>
+    </div>
+    
+    <section class="aboutsite">
+        <h3>Login to get the following benefits!</h3>
+        <p>This is a website where you can get notes!</p>
+        <p>Please note that this site is temporary and may be taken down at any time. So, make sure to download or use the notes while you can! Thank you for visiting, and we hope our notes make your practicals a breeze!</p>
+        <p>If the site was taken down, you can contact the broker to get a refund!</p>
+    </section>
+
+    <main>
+        <h3 class="problem-heading">Having issues while logging in?</h3>
+        <ol class="problem-list">
+            <li>Don't have the login code?</li>
+        </ol>
+        <p class="notes-disc">Since the website requires a subscription, you'll need to reach out to the site's <a href="#">broker</a> to gain access. If you're unsure where to find the broker, <a href="#">Click here</a> for contact details. Get in touch with them to obtain your login code!</p>
+
+        <ol class="problem-list">
+            <li>The login code doesn't match:</li>
+        </ol>
+        <p class="notes-disc">The website's login code changes daily, so if you obtained it from an unofficial source, it may no longer be valid. To get the official login code, please contact the broker by <a href="#">Clicking here.</a></p>
+    </main>
+
+    <footer>
+        <u>About</u> <br>
+        &copy; Copyright all rights reserved <br>
+        Created by: Lost boy who loves ukulele. <br>
+        Contact: I don't have any ways to contact.
+    </footer>
+
+
+</body>
+
+</html>
