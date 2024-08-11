@@ -135,22 +135,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 // Disable right-click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 let currentErrorIndex = 0;
 
-// Function to handle login
+// Define a whitelist with corresponding login codes
+const whitelist = {
+    'sugampokhrel099@gmail.com': '3535',
+    'guestuser@gmail.com': '3030'
+};
+
 function handleLogin() {
+    const loginGmailInput = document.getElementById('login-gmail');
     const loginCodeInput = document.getElementById('login-code');
-    const loginCode = loginCodeInput.value;
     const errorMessage = document.getElementById('error-message');
 
-    const correctCode = '3535';
-    const errorMessages = ["Incorrect value", "Try again", "Ghambare Ghambare"];
+    const loginGmail = loginGmailInput.value.trim();
+    const loginCode = loginCodeInput.value.trim();
 
-    if (loginCode === correctCode) {
+    const errorMessages = ["Incorrect Gmail or login code.", "Incorrect login info!", "Incorrect! Again?", "May god bless you!", "I pray that you will get it today!", "Just contact the broker!", "Get a membership!", "RIP, my guy.", "Are you serious?", "You have tried 10 times today!!!", "Access denied!"];
+
+    // Check if the email is in the whitelist and if the code matches the associated code
+    if (whitelist[loginGmail] && whitelist[loginGmail] === loginCode) {
         sessionStorage.setItem('loggedIn', 'true');
         window.location.href = 'home.html';  // Redirect to home page after successful login
     } else {
@@ -178,3 +185,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     checkLoginStatus();
 });
+
+
