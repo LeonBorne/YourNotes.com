@@ -143,6 +143,7 @@ let currentErrorIndex = 0;
 // Define a whitelist with corresponding login codes
 const whitelist = {
     'sugampokhrel099@gmail.com': '3535',
+    'himsagarbhandari23@gmail.com': 'uke90',
     'guestuser@gmail.com': '3030'
 };
 
