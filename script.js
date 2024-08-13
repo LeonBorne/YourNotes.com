@@ -144,7 +144,8 @@ let currentErrorIndex = 0;
 const whitelist = {
     'sugampokhrel099@gmail.com': '3535',
     'himsagarbhandari23@gmail.com': 'uke90',
-    'guestuser@gmail.com': '3030'
+    'guestuser@gmail.com': '3030',
+    'sangit':'3232'
 };
 
 function handleLogin() {
